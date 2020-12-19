@@ -16,6 +16,9 @@
 		E9F6A19D258DAC7300E89C98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A19C258DAC7300E89C98 /* main.m */; };
 		E9F6A1A7258DAC7300E89C98 /* TestTextureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A1A6258DAC7300E89C98 /* TestTextureTests.m */; };
 		E9F6A1B2258DAC7300E89C98 /* TestTextureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A1B1258DAC7300E89C98 /* TestTextureUITests.m */; };
+		E9F6A1C8258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A1C7258DAE0A00E89C98 /* _ASAsyncTransaction.mm */; };
+		E9F6A1C9258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A1C7258DAE0A00E89C98 /* _ASAsyncTransaction.mm */; };
+		E9F6A1CA258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A1C7258DAE0A00E89C98 /* _ASAsyncTransaction.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,8 @@
 		E9F6A1AD258DAC7300E89C98 /* TestTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTextureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F6A1B1258DAC7300E89C98 /* TestTextureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTextureUITests.m; sourceTree = "<group>"; };
 		E9F6A1B3258DAC7300E89C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F6A1C6258DAE0A00E89C98 /* _ASAsyncTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ASAsyncTransaction.h; sourceTree = "<group>"; };
+		E9F6A1C7258DAE0A00E89C98 /* _ASAsyncTransaction.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = _ASAsyncTransaction.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,7 @@
 		E9F6A189258DAC7100E89C98 /* TestTexture */ = {
 			isa = PBXGroup;
 			children = (
+				E9F6A1C2258DADCC00E89C98 /* Texture */,
 				E9F6A18A258DAC7100E89C98 /* AppDelegate.h */,
 				E9F6A18B258DAC7100E89C98 /* AppDelegate.m */,
 				E9F6A18D258DAC7100E89C98 /* SceneDelegate.h */,
@@ -135,6 +141,39 @@
 				E9F6A1B3258DAC7300E89C98 /* Info.plist */,
 			);
 			path = TestTextureUITests;
+			sourceTree = "<group>";
+		};
+		E9F6A1C2258DADCC00E89C98 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				E9F6A1C3258DADD500E89C98 /* Core */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		E9F6A1C3258DADD500E89C98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9F6A1C4258DADDB00E89C98 /* Details */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E9F6A1C4258DADDB00E89C98 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E9F6A1C5258DADE100E89C98 /* Transactions */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E9F6A1C5258DADE100E89C98 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				E9F6A1C6258DAE0A00E89C98 /* _ASAsyncTransaction.h */,
+				E9F6A1C7258DAE0A00E89C98 /* _ASAsyncTransaction.mm */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F6A1C8258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */,
 				E9F6A192258DAC7100E89C98 /* ViewController.m in Sources */,
 				E9F6A18C258DAC7100E89C98 /* AppDelegate.m in Sources */,
 				E9F6A19D258DAC7300E89C98 /* main.m in Sources */,
@@ -278,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F6A1A7258DAC7300E89C98 /* TestTextureTests.m in Sources */,
+				E9F6A1C9258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F6A1B2258DAC7300E89C98 /* TestTextureUITests.m in Sources */,
+				E9F6A1CA258DAE0A00E89C98 /* _ASAsyncTransaction.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
